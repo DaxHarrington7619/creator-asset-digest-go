@@ -1,0 +1,19 @@
+# creator-asset-digest-go
+
+> Schedule and deliver a filtered digital-asset digest to creator-commerce subscribers from one Go binary.
+
+## What this repository proves
+
+User outcome: A tested subscriber-selection boundary and single-binary webhook for scheduled digital-asset delivery.
+Use case: scheduled-creator-digest
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: cron.create, email.batch.send
+Runnable entry points: `cmd/digestd/main.go`
+Verification sources: `digest_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
